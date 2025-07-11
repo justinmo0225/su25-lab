@@ -26,6 +26,8 @@ loop:
     blt t1 t2 loop
 
     # Exit the program
-    li a0 0
+    mv a0 s0
     jal free
+    
+    li a0 0
     jal exit
