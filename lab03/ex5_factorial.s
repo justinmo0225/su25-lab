@@ -28,6 +28,21 @@ main:
 factorial:
     # YOUR CODE HERE
 
+    li a1, 1
+
     # This is how you return from a function. You'll learn more about this later.
     # This should be the last line in your program.
+    
+loop:
+    li t0, 2
+    bltu a0, t0, quit   # quits if a0 is <2
+    mul a1, a0, a1
+    addi a0, a0, -1     # becomes n-1
+    j loop
+    
+quit:
+    mv a0, a1
     jr ra
+    
+
+    
