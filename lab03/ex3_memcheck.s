@@ -22,7 +22,7 @@ loop:
     addi t0 t0 4
     # Check if we are done
     # If not, loop
-    blt t1 t2 loop
+    bge t2 t1 loop
 
     # Exit the program
     li a0 0
