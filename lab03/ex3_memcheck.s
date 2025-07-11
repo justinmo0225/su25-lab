@@ -27,4 +27,5 @@ loop:
 
     # Exit the program
     li a0 0
+    jal free
     jal exit
