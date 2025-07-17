@@ -109,7 +109,7 @@ inc_arr_end:
     # FIXME: What other registers need to be restored?
     lw ra, 0(sp)
     lw s0, 4(sp)
-    sw s1, 8(sp)
+    lw s1, 8(sp)
     addi sp, sp, 12     # adds back to the beginning at inc-arr
     # END EPILOGUE
     jr ra
