@@ -80,7 +80,7 @@ inc_arr:
     addi sp, sp, -12        # 3 of them for 4 bytes each
     sw ra, 0(sp)
     sw s0, 4(sp)
-    sw, s1, 8(sp)
+    sw s1, 8(sp)
     # END PROLOGUE
     mv s0, a0 # Copy start of array to saved register
     mv s1, a1 # Copy length of array to saved register
